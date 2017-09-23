@@ -1,5 +1,9 @@
 import abstractFactory.AbstractFactory;
 import abstractFactory.FactoryProducer;
+import builder.BuilderPatternDemo;
+import strategy.Addition;
+import strategy.Multiplication;
+import strategy.StrategyPatternDemo;
 
 
 /**
@@ -32,12 +36,31 @@ public class DesignPatternDemo {
         sf.getShape("triangle").draw();*/
 
         /*Demo Abstract Factory Pattern*/
-        FactoryProducer fp = new FactoryProducer();
+        /*FactoryProducer fp = new FactoryProducer();
         fp.getFactory("shape").getShape("circle").draw();
         fp.getFactory("shape").getShape("square").draw();
         fp.getFactory("shape").getShape("triangle").draw();
         fp.getFactory("color").getColor("blue").fill();
-        fp.getFactory("color").getColor("red").fill();
+        fp.getFactory("color").getColor("red").fill();*/
+
+        /*Demo Builder Pattern*/
+       /* BuilderPatternDemo bp = new BuilderPatternDemo.Builder()
+                .setNum1(1)
+                .setNum2(2)
+                .setNum3(3)
+                .setNum4(4)
+                .setNum5(5)
+                .build();
+        System.out.println("My object built is as follows: \n" + bp);*/
+
+        /*Demo of Strategy Pattern*/
+        /*StrategyPatternDemo myStrategy = new StrategyPatternDemo(new Addition());
+        System.out.println("Addition of 5,5:  " + myStrategy.performOperation(5,5));
+
+        myStrategy = new StrategyPatternDemo(new Multiplication());
+        System.out.println("Multiplication of 5,5:  " + myStrategy.performOperation(5,5));*/
+
+
 
     }
 }
