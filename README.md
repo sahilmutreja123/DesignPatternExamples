@@ -6,3 +6,5 @@ Project contains following design patterns:
 3. factory
 4. singleton
 5. strategy
+
+Stay tuned for more...
